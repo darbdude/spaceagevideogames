@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>330acb09-9ace-4d00-9415-fe5a2b2039a7</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>psychconaut_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\chat.css" />
+    <Content Include="css\janusplayer.css" />
+    <Content Include="css\janusweb.css" />
+    <Content Include="css\sharing.css" />
+    <Content Include="css\urlbar.css" />
+    <Content Include="index.html" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\StoreLogo.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="js\main.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\world.js" />
+    <Content Include="media\assets.json" />
+    <Content Include="media\assets\avatar.obj" />
+    <Content Include="media\assets\avatar.png" />
+    <Content Include="media\assets\avatar_head.obj" />
+    <Content Include="media\assets\avatar_head.png" />
+    <Content Include="media\assets\Beta.gltf\Beta.bin" />
+    <Content Include="media\assets\Beta.gltf\Beta.gltf" />
+    <Content Include="media\assets\black.png" />
+    <Content Include="media\assets\controllers\cursor\IonCannon.dae" />
+    <Content Include="media\assets\controllers\daydream\LICENSE" />
+    <Content Include="media\assets\controllers\daydream\README.md" />
+    <Content Include="media\assets\controllers\daydream\vr_controller_daydream.mtl" />
+    <Content Include="media\assets\controllers\daydream\vr_controller_daydream.obj" />
+    <Content Include="media\assets\controllers\daydream\vr_controller_daydream_render.png" />
+    <Content Include="media\assets\controllers\daydream\vr_controller_daydream_tex.png" />
+    <Content Include="media\assets\controllers\oculus\TouchLeft.dae.gz" />
+    <Content Include="media\assets\controllers\oculus\TouchRight.dae.gz" />
+    <Content Include="media\assets\controllers\oculus\TouchTopLeft.png" />
+    <Content Include="media\assets\controllers\oculus\TouchTopRight.png" />
+    <Content Include="media\assets\controllers\vive\ViveController.dae.gz" />
+    <Content Include="media\assets\controllers\vive\Vive_Controller_Black_Diffuse.png" />
+    <Content Include="media\assets\controllers\vive\Vive_Controller_Logos.png" />
+    <Content Include="media\assets\controllers\vive\Vive_Controller_Normal.png" />
+    <Content Include="media\assets\controllers\vive\Vive_Controller_Specular.png" />
+    <Content Include="media\assets\controllers\vive\Vive_Controller_White_Diffuse.png" />
+    <Content Include="media\assets\cursor\arrow.png" />
+    <Content Include="media\assets\cursor\crosshair.png" />
+    <Content Include="media\assets\cursor\hand.png" />
+    <Content Include="media\assets\error.png" />
+    <Content Include="media\assets\github-identicon.png" />
+    <Content Include="media\assets\hand_cylinder.obj" />
+    <Content Include="media\assets\hand_sphere.obj" />
+    <Content Include="media\assets\hoverscreen.mtl" />
+    <Content Include="media\assets\hoverscreen.obj" />
+    <Content Include="media\assets\linear_gradient.png" />
+    <Content Include="media\assets\loading.obj" />
+    <Content Include="media\assets\menu.obj" />
+    <Content Include="media\assets\primitives\capsule.obj" />
+    <Content Include="media\assets\primitives\cone.obj" />
+    <Content Include="media\assets\primitives\cube.obj" />
+    <Content Include="media\assets\primitives\cylinder.obj" />
+    <Content Include="media\assets\primitives\pipe.obj" />
+    <Content Include="media\assets\primitives\plane.obj" />
+    <Content Include="media\assets\primitives\pyramid.obj" />
+    <Content Include="media\assets\primitives\sphere.obj" />
+    <Content Include="media\assets\primitives\torus.obj" />
+    <Content Include="media\assets\rooms\room1.jpg" />
+    <Content Include="media\assets\rooms\room1.obj" />
+    <Content Include="media\assets\rooms\room1.png" />
+    <Content Include="media\assets\rooms\room1.txt" />
+    <Content Include="media\assets\rooms\room1_collision.obj" />
+    <Content Include="media\assets\rooms\room1_new.obj" />
+    <Content Include="media\assets\rooms\room1_new.png" />
+    <Content Include="media\assets\rooms\room1_new.txt" />
+    <Content Include="media\assets\rooms\room1_new_collision.obj" />
+    <Content Include="media\assets\rooms\room2.obj" />
+    <Content Include="media\assets\rooms\room2.png" />
+    <Content Include="media\assets\rooms\room2.txt" />
+    <Content Include="media\assets\rooms\room2_collision.obj" />
+    <Content Include="media\assets\rooms\room3.obj" />
+    <Content Include="media\assets\rooms\room3.png" />
+    <Content Include="media\assets\rooms\room3.txt" />
+    <Content Include="media\assets\rooms\room3_collision.obj" />
+    <Content Include="media\assets\rooms\room4.obj" />
+    <Content Include="media\assets\rooms\room4.png" />
+    <Content Include="media\assets\rooms\room4.txt" />
+    <Content Include="media\assets\rooms\room4_collision.obj" />
+    <Content Include="media\assets\rooms\room5.obj" />
+    <Content Include="media\assets\rooms\room5.png" />
+    <Content Include="media\assets\rooms\room5.txt" />
+    <Content Include="media\assets\rooms\room5_collision.obj" />
+    <Content Include="media\assets\rooms\room6.obj" />
+    <Content Include="media\assets\rooms\room6.png" />
+    <Content Include="media\assets\rooms\room6.txt" />
+    <Content Include="media\assets\rooms\room6_collision.obj" />
+    <Content Include="media\assets\rooms\room_1pedestal.obj" />
+    <Content Include="media\assets\rooms\room_1pedestal.png" />
+    <Content Include="media\assets\rooms\room_1pedestal.txt" />
+    <Content Include="media\assets\rooms\room_1pedestal_collision.obj" />
+    <Content Include="media\assets\rooms\room_2pedestal.obj" />
+    <Content Include="media\assets\rooms\room_2pedestal.png" />
+    <Content Include="media\assets\rooms\room_2pedestal.txt" />
+    <Content Include="media\assets\rooms\room_2pedestal_collision.obj" />
+    <Content Include="media\assets\rooms\room_3_narrow.obj" />
+    <Content Include="media\assets\rooms\room_3_narrow.png" />
+    <Content Include="media\assets\rooms\room_3_narrow.txt" />
+    <Content Include="media\assets\rooms\room_3_narrow_collision.obj" />
+    <Content Include="media\assets\rooms\room_3_wide.obj" />
+    <Content Include="media\assets\rooms\room_3_wide.png" />
+    <Content Include="media\assets\rooms\room_3_wide.txt" />
+    <Content Include="media\assets\rooms\room_3_wide_collision.obj" />
+    <Content Include="media\assets\rooms\room_4_narrow.obj" />
+    <Content Include="media\assets\rooms\room_4_narrow.png" />
+    <Content Include="media\assets\rooms\room_4_narrow.txt" />
+    <Content Include="media\assets\rooms\room_4_narrow_collision.obj" />
+    <Content Include="media\assets\rooms\room_4_wide.obj" />
+    <Content Include="media\assets\rooms\room_4_wide.png" />
+    <Content Include="media\assets\rooms\room_4_wide.txt" />
+    <Content Include="media\assets\rooms\room_4_wide_collision.obj" />
+    <Content Include="media\assets\rooms\room_box_medium.obj" />
+    <Content Include="media\assets\rooms\room_box_medium.png" />
+    <Content Include="media\assets\rooms\room_box_medium.txt" />
+    <Content Include="media\assets\rooms\room_box_medium_collision.obj" />
+    <Content Include="media\assets\rooms\room_box_small.obj" />
+    <Content Include="media\assets\rooms\room_box_small.png" />
+    <Content Include="media\assets\rooms\room_box_small.txt" />
+    <Content Include="media\assets\rooms\room_box_small_collision.obj" />
+    <Content Include="media\assets\rooms\room_home.obj" />
+    <Content Include="media\assets\rooms\room_home.png" />
+    <Content Include="media\assets\rooms\room_home.txt" />
+    <Content Include="media\assets\rooms\room_home_collision.obj" />
+    <Content Include="media\assets\rooms\room_plane.obj" />
+    <Content Include="media\assets\rooms\room_plane.png" />
+    <Content Include="media\assets\rooms\room_plane.txt" />
+    <Content Include="media\assets\rooms\room_plane2.obj" />
+    <Content Include="media\assets\rooms\room_plane2.png" />
+    <Content Include="media\assets\rooms\room_plane2.txt" />
+    <Content Include="media\assets\rooms\room_plane2_collision.obj" />
+    <Content Include="media\assets\rooms\room_plane_collision.obj" />
+    <Content Include="media\assets\rooms\tile_d.png" />
+    <Content Include="media\assets\rooms\tile_g.png" />
+    <Content Include="media\assets\rooms\tile_n.png" />
+    <Content Include="media\assets\rooms\tile_s.png" />
+    <Content Include="media\assets\skybox\dark_back.png" />
+    <Content Include="media\assets\skybox\dark_down.png" />
+    <Content Include="media\assets\skybox\dark_front.png" />
+    <Content Include="media\assets\skybox\dark_left.png" />
+    <Content Include="media\assets\skybox\dark_right.png" />
+    <Content Include="media\assets\skybox\dark_up.png" />
+    <Content Include="media\assets\skybox\Day\Dayback.jpg" />
+    <Content Include="media\assets\skybox\Day\Daybottom.jpg" />
+    <Content Include="media\assets\skybox\Day\Dayfront.jpg" />
+    <Content Include="media\assets\skybox\Day\Dayleft.jpg" />
+    <Content Include="media\assets\skybox\Day\Dayright.jpg" />
+    <Content Include="media\assets\skybox\Day\Daytop.jpg" />
+    <Content Include="media\assets\skybox\Day\Day_Irradiance.dds" />
+    <Content Include="media\assets\skybox\Day\Day_Radiance.dds" />
+    <Content Include="media\assets\skybox\Evening\Eveningback.jpg" />
+    <Content Include="media\assets\skybox\Evening\Eveningbottom.jpg" />
+    <Content Include="media\assets\skybox\Evening\Eveningfront.jpg" />
+    <Content Include="media\assets\skybox\Evening\Eveningleft.jpg" />
+    <Content Include="media\assets\skybox\Evening\Eveningright.jpg" />
+    <Content Include="media\assets\skybox\Evening\Eveningtop.jpg" />
+    <Content Include="media\assets\skybox\Evening\Evening_Irradiance.dds" />
+    <Content Include="media\assets\skybox\Evening\Evening_Radiance.dds" />
+    <Content Include="media\assets\skybox\miramar_back.png" />
+    <Content Include="media\assets\skybox\miramar_down.png" />
+    <Content Include="media\assets\skybox\miramar_front.png" />
+    <Content Include="media\assets\skybox\miramar_left.png" />
+    <Content Include="media\assets\skybox\miramar_right.png" />
+    <Content Include="media\assets\skybox\miramar_up.png" />
+    <Content Include="media\assets\skybox\Night\Nightback.jpg" />
+    <Content Include="media\assets\skybox\Night\Nightbottom.jpg" />
+    <Content Include="media\assets\skybox\Night\Nightfront.jpg" />
+    <Content Include="media\assets\skybox\Night\Nightleft.jpg" />
+    <Content Include="media\assets\skybox\Night\Nightright.jpg" />
+    <Content Include="media\assets\skybox\Night\Nighttop.jpg" />
+    <Content Include="media\assets\skybox\Night\Night_Irradiance.dds" />
+    <Content Include="media\assets\skybox\Night\Night_Radiance.dds" />
+    <Content Include="media\assets\skybox\skyrender_back.png" />
+    <Content Include="media\assets\skybox\skyrender_down.png" />
+    <Content Include="media\assets\skybox\skyrender_front.png" />
+    <Content Include="media\assets\skybox\skyrender_left.png" />
+    <Content Include="media\assets\skybox\skyrender_right.png" />
+    <Content Include="media\assets\skybox\skyrender_up.png" />
+    <Content Include="media\assets\speaker.png" />
+    <Content Include="media\assets\splash.png" />
+    <Content Include="media\assets\translator\default\cube.obj" />
+    <Content Include="media\assets\translator\default\cube2.obj" />
+    <Content Include="media\assets\translator\drash\drash.jpg" />
+    <Content Include="media\assets\translator\errors\error.obj" />
+    <Content Include="media\assets\translator\errors\lightmap.png" />
+    <Content Include="media\assets\translator\errors\static.gif" />
+    <Content Include="media\assets\translator\flickr\flickr.jpg" />
+    <Content Include="media\assets\translator\flickr\statue.obj" />
+    <Content Include="media\assets\translator\flickr\statue.png" />
+    <Content Include="media\assets\translator\gfycat\black.png" />
+    <Content Include="media\assets\translator\gfycat\gfycat_logo.png" />
+    <Content Include="media\assets\translator\imgur\imgur.jpg" />
+    <Content Include="media\assets\translator\imgur\statue.obj" />
+    <Content Include="media\assets\translator\imgur\statue.png" />
+    <Content Include="media\assets\translator\reddit\1.png" />
+    <Content Include="media\assets\translator\reddit\2.png" />
+    <Content Include="media\assets\translator\reddit\bluetileseemless.jpg" />
+    <Content Include="media\assets\translator\reddit\default.png" />
+    <Content Include="media\assets\translator\reddit\down.png" />
+    <Content Include="media\assets\translator\reddit\over18.png" />
+    <Content Include="media\assets\translator\reddit\redditcollisionmesh.mtl" />
+    <Content Include="media\assets\translator\reddit\redditcollisionmesh.obj" />
+    <Content Include="media\assets\translator\reddit\redditcollisionmeshchair.mtl" />
+    <Content Include="media\assets\translator\reddit\redditcollisionmeshchair.obj" />
+    <Content Include="media\assets\translator\reddit\redditpictureart.jpg" />
+    <Content Include="media\assets\translator\reddit\redditroomchairs.dae" />
+    <Content Include="media\assets\translator\reddit\redditroomcircle1.dae" />
+    <Content Include="media\assets\translator\reddit\redditroomcircle2.dae" />
+    <Content Include="media\assets\translator\reddit\RedditRoomConcept.html" />
+    <Content Include="media\assets\translator\reddit\redditroomFinal.dae" />
+    <Content Include="media\assets\translator\reddit\redditroomlight.dae" />
+    <Content Include="media\assets\translator\reddit\screensingle.obj" />
+    <Content Include="media\assets\translator\reddit\self.png" />
+    <Content Include="media\assets\translator\reddit\statue.png" />
+    <Content Include="media\assets\translator\reddit\trontile.jpg" />
+    <Content Include="media\assets\translator\reddit\up.png" />
+    <Content Include="media\assets\translator\vrsites\thumb.jpg" />
+    <Content Include="media\assets\translator\web\1.png" />
+    <Content Include="media\assets\translator\web\2.png" />
+    <Content Include="media\assets\translator\web\bamboo.dae" />
+    <Content Include="media\assets\translator\web\bamboo2.png" />
+    <Content Include="media\assets\translator\web\bambooleaves.png" />
+    <Content Include="media\assets\translator\web\Collisionmesh.obj" />
+    <Content Include="media\assets\translator\web\Door.jpg" />
+    <Content Include="media\assets\translator\web\Dream.jpg" />
+    <Content Include="media\assets\translator\web\hunza_floor_light_square_spot_stainless_steel.jpg" />
+    <Content Include="media\assets\translator\web\paintings.dae" />
+    <Content Include="media\assets\translator\web\Parallelogram.html" />
+    <Content Include="media\assets\translator\web\ParallelogramFinal.dae" />
+    <Content Include="media\assets\translator\web\sand-dune-seamless-texture.jpg" />
+    <Content Include="media\assets\translator\web\screen3.mtl" />
+    <Content Include="media\assets\translator\web\screen3.obj" />
+    <Content Include="media\assets\translator\web\screensingle.mtl" />
+    <Content Include="media\assets\translator\web\screensingle.obj" />
+    <Content Include="media\assets\translator\web\trontile.jpg" />
+    <Content Include="media\assets\translator\web\tvback.dae" />
+    <Content Include="media\assets\translator\web\wooddarkseemless.jpg" />
+    <Content Include="media\assets\translator\web\woodlightSeamless.jpg" />
+    <Content Include="media\assets\translator\youtube\thumb.jpg" />
+    <Content Include="media\assets\translator\youtube\Thumbs.db" />
+    <Content Include="media\fonts\helvetiker_regular.typeface.js" />
+    <Content Include="media\images\icons\janusweb-144x144.png" />
+    <Content Include="media\images\icons\janusweb-168x168.png" />
+    <Content Include="media\images\icons\janusweb-192x192.png" />
+    <Content Include="media\images\icons\janusweb-256x256.ico" />
+    <Content Include="media\images\icons\janusweb-256x256.png" />
+    <Content Include="media\images\icons\janusweb-48x48.png" />
+    <Content Include="media\images\icons\janusweb-512x512.png" />
+    <Content Include="media\images\icons\janusweb-72x72.png" />
+    <Content Include="media\images\icons\janusweb-96x96.png" />
+    <Content Include="media\images\share\dropbox.png" />
+    <Content Include="media\images\share\facebook.png" />
+    <Content Include="media\images\share\file.png" />
+    <Content Include="media\images\share\flickr.png" />
+    <Content Include="media\images\share\google-drive.png" />
+    <Content Include="media\images\share\imgur.png" />
+    <Content Include="media\images\share\picasa.png" />
+    <Content Include="media\images\share\youtube.png" />
+    <Content Include="media\index.html" />
+    <Content Include="media\manifest.json" />
+    <Content Include="media\tests\axes.html" />
+    <Content Include="media\tests\blank.html" />
+    <Content Include="media\tests\collada.html" />
+    <Content Include="media\tests\collisions.html" />
+    <Content Include="media\tests\collisions.js" />
+    <Content Include="media\tests\ghosts.html" />
+    <Content Include="media\tests\gif.html" />
+    <Content Include="media\tests\imageid.html" />
+    <Content Include="media\tests\images\solid-blue.jpg" />
+    <Content Include="media\tests\images\solid-blue.png" />
+    <Content Include="media\tests\images\solid-green.jpg" />
+    <Content Include="media\tests\images\solid-green.png" />
+    <Content Include="media\tests\images\solid-red.jpg" />
+    <Content Include="media\tests\images\solid-red.png" />
+    <Content Include="media\tests\images\transparent-blue-50.png" />
+    <Content Include="media\tests\images\transparent-green-50.png" />
+    <Content Include="media\tests\images\transparent-red-50.png" />
+    <Content Include="media\tests\images\water2.png" />
+    <Content Include="media\tests\keyboard.html" />
+    <Content Include="media\tests\keyboard.js" />
+    <Content Include="media\tests\lights.html" />
+    <Content Include="media\tests\models-textured.html" />
+    <Content Include="media\tests\models.html" />
+    <Content Include="media\tests\models\bunny.ply" />
+    <Content Include="media\tests\models\gltf.html" />
+    <Content Include="media\tests\models\metal07-diffuse.png" />
+    <Content Include="media\tests\models\metal07-normal.png" />
+    <Content Include="media\tests\models\metal07-specular.png" />
+    <Content Include="media\tests\models\monkey-material-flat-ascii.fbx" />
+    <Content Include="media\tests\models\monkey-material-flat.dae" />
+    <Content Include="media\tests\models\monkey-material-flat.fbx" />
+    <Content Include="media\tests\models\monkey-material-flat.mtl" />
+    <Content Include="media\tests\models\monkey-material-flat.obj" />
+    <Content Include="media\tests\models\monkey-material-smooth.dae" />
+    <Content Include="media\tests\models\monkey-material-smooth.fbx" />
+    <Content Include="media\tests\models\monkey-material-smooth.mtl" />
+    <Content Include="media\tests\models\monkey-material-smooth.obj" />
+    <Content Include="media\tests\models\monkey-nomaterial-flat.dae" />
+    <Content Include="media\tests\models\monkey-nomaterial-flat.fbx" />
+    <Content Include="media\tests\models\monkey-nomaterial-flat.mtl" />
+    <Content Include="media\tests\models\monkey-nomaterial-flat.obj" />
+    <Content Include="media\tests\models\monkey-nomaterial-smooth.dae" />
+    <Content Include="media\tests\models\monkey-nomaterial-smooth.fbx" />
+    <Content Include="media\tests\models\monkey-nomaterial-smooth.mtl" />
+    <Content Include="media\tests\models\monkey-nomaterial-smooth.obj" />
+    <Content Include="media\tests\models\pointcloud-ascii.ply" />
+    <Content Include="media\tests\models\test-axes.dae" />
+    <Content Include="media\tests\models\test-axes.fbx" />
+    <Content Include="media\tests\models\test-axes.mtl" />
+    <Content Include="media\tests\models\test-axes.obj" />
+    <Content Include="media\tests\models\vrmltest.wrl" />
+    <Content Include="media\tests\particles.html" />
+    <Content Include="media\tests\particles2.html" />
+    <Content Include="media\tests\photospheres.html" />
+    <Content Include="media\tests\portal.html" />
+    <Content Include="media\tests\primitives.html" />
+    <Content Include="media\tests\rooms.html" />
+    <Content Include="media\tests\rooms\room1.html" />
+    <Content Include="media\tests\rooms\room1_new.html" />
+    <Content Include="media\tests\rooms\room2.html" />
+    <Content Include="media\tests\rooms\room3.html" />
+    <Content Include="media\tests\rooms\room4.html" />
+    <Content Include="media\tests\rooms\room5.html" />
+    <Content Include="media\tests\rooms\room6.html" />
+    <Content Include="media\tests\rooms\room_1pedestal.html" />
+    <Content Include="media\tests\rooms\room_2pedestal.html" />
+    <Content Include="media\tests\rooms\room_3_narrow.html" />
+    <Content Include="media\tests\rooms\room_3_wide.html" />
+    <Content Include="media\tests\rooms\room_4_narrow.html" />
+    <Content Include="media\tests\rooms\room_4_wide.html" />
+    <Content Include="media\tests\rooms\room_box_medium.html" />
+    <Content Include="media\tests\rooms\room_box_small.html" />
+    <Content Include="media\tests\rooms\room_home.html" />
+    <Content Include="media\tests\rooms\room_plane.html" />
+    <Content Include="media\tests\rooms\room_plane2.html" />
+    <Content Include="media\tests\room_plane.html" />
+    <Content Include="media\tests\scripts.html" />
+    <Content Include="media\tests\scripts2.html" />
+    <Content Include="media\tests\scripttest.js" />
+    <Content Include="media\tests\scripttest2.js" />
+    <Content Include="media\tests\settimeout.html" />
+    <Content Include="media\tests\settimeout.js" />
+    <Content Include="media\tests\settimeout2.html" />
+    <Content Include="media\tests\settimeout2.js" />
+    <Content Include="media\tests\shadows.html" />
+    <Content Include="media\tests\sounds\bloop.wav" />
+    <Content Include="media\tests\sounds\bonk.wav" />
+    <Content Include="media\tests\text.html" />
+    <Content Include="media\tests\textures.html" />
+    <Content Include="media\tests\video.html" />
+    <Content Include="media\tests\vivecrash.html" />
+    <Content Include="media\tests\vivecrash.js" />
+    <Content Include="media\tests\vrml.html" />
+    <None Include="psychconaut_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
